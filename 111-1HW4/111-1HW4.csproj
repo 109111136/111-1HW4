@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="test.aspx" />
     <Content Include="Users.sql" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -76,9 +77,17 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="answer.md" />
+    <Content Include="answer.md.pdf" />
+    <Content Include="answer.rar" />
     <None Include="packages.config" />
     <Content Include="readme.md" />
     <None Include="Web.Debug.config">
